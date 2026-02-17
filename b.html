@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Rent Books — Utopian Library</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+		<nav class="navbar">
+    
+    <div class="brand">
+        <img src="logo.png" alt="Utopian Library logo" class="logo" />
+    </div>
+
+    <!-- NEW MENU -->
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="search">
+        <input id="search" type="search" placeholder="Search books..."/>
+    </div>
+
+    <div class="actions">
+        <button id="view-rentals" class="btn ghost">
+            My Rentals (<span id="rental-count">0</span>)
+        </button>
+    </div>
+
+</nav>
+
+
+	<main>
+		<section class="books-panel">
+			<div id="books-grid" class="books-grid" aria-live="polite"></div>
+		</section>
+	</main>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
